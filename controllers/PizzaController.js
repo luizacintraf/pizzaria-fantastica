@@ -61,6 +61,16 @@ const PizzaController = {
         fs.writeFileSync(path.join('database', 'listaPizza.json'), JSON.stringify(listaPizzas));
 
         res.redirect('/');
+    },
+    search:(req,res)=>{
+        let busca = req.query.q
+        let resultadoBusca =listaPizzas.filter(pizza=>pizza.nome.toLowerCase().indexOf(busca.toLowerCase())>-1)
+        if(pizza.length >0){
+            res.render('index', { listaPizzas: resultadoBusca });
+        }else{
+            res.render('index', { listaPizzas });
+        }
+        
     }
 }
 

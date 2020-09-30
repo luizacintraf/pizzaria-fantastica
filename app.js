@@ -7,6 +7,7 @@ var methodOverride = require('method-override');
 
 
 var pizzaRouter = require('./routes/PizzaRouter');
+var UsersRouter=require('./routes/UsersRouter');
 
 var app = express();
 // view engine setup
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));
 
 app.use('/', pizzaRouter);
+app.use('/user', UsersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

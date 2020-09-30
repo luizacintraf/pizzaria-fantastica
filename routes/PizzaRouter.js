@@ -20,5 +20,6 @@ Router.get('/cadastrar', PizzaController.create);
 Router.post('/cadastrar', upload.any() , PizzaController.store);
 Router.get('/editar/:id', PizzaController.edit);
 Router.put('/editar/:id', upload.any() , PizzaController.update);
+Router.get('/busca',PizzaController.search)
 
 module.exports = Router;
