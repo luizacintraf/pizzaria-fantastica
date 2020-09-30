@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/form-usuario.css">
 </head>
-<form id="form-usuario" method="POST" action="/user/cadastro" enctype="multipart/form-data">
+<form id="form-usuario" method="POST" action="/user/cadastro">
     <label>
         Foto:
         <img src="/img/no-image.png">
@@ -18,15 +19,15 @@
     <div class="campos">
         <label>
             Nome:
-            <input type="text" id="nome" placeholder="Digite o nome do usuário">
+            <input type="text" id="nome" placeholder="Digite o nome do usuário" name="nome">
         </label>
         <label>
             E-mail:
-            <input type="email" id="email" placeholder="Digite e-mail do usuário">
+            <input type="email" id="email" placeholder="Digite e-mail do usuário" name="email">
         </label>
         <label>
             Senha:
-            <input type="password"  id="senha" placeholder="Digite a senha">
+            <input type="password"  id="senha" placeholder="Digite a senha" name="senha">
         </label>
         <label>
             Confirme a Senha:
@@ -36,4 +37,5 @@
     </div>
 </form>
 </body>
+
 </html>

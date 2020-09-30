@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/form-login.css">
 </head>
-    <form id="form-login" >
-        <div>
-            <label for="email">
+<form id="form-login" action="/user/login" method="POST">
+    <div>
+        <label for="email">
                 E-mail
-                <input type="text" id="email">
+                <input type="text" id="email" name="email">
             </label>
-        </div>
-        <div>
-            <label for="senha">
+    </div>
+    <div>
+        <label for="senha">
                 Senha:
-                <input type="password" id="senha">
+                <input type="password" id="senha" name="senha">
             </label>
-        </div>
-        <div class="controles">
-            <a href="/adm/forgot">Esqueci minha senha</a>
-            <button type="submit">Entrar</button>
-        </div>
-    </form>
+    </div>
+    <div class="controles">
+        <a href="/adm/forgot">Esqueci minha senha</a>
+        <button type="submit">Entrar</button>
+    </div>
+</form>
 </body>
+
 </html>
