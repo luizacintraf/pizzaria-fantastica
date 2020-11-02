@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Fantastica</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/form-usuario.css">
+</head>
+<form id="form-usuario" method="POST" action="/user/cadastro">
+    <label>
+        Foto:
+        <img src="/img/no-image.png">
+        <div>Clique para selecione nova imagem</div>
+        <input type="file" id="img" name=˜img˜>
+    </label>
+    <div class="campos">
+        <label>
+            Nome:
+            <input type="text" id="nome" placeholder="Digite o nome do usuário" name="nome">
+        </label>
+        <label>
+            E-mail:
+            <input type="email" id="email" placeholder="Digite e-mail do usuário" name="email">
+        </label>
+        <label>
+            Senha:
+            <input type="password"  id="senha" placeholder="Digite a senha" name="senha">
+        </label>
+        <label>
+            Confirme a Senha:
+            <input type="password" id="conf" placeholder="Confirme a senha do usuário">
+        </label>
+        <button type="submit">Salvar</button>
+    </div>
+</form>
+</body>
+
+</html>
